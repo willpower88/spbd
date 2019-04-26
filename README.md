@@ -24,11 +24,11 @@ _说明：在mac系统下进行整合_
    ```
 ## 3. 新建idea工程
 1. 新建spring工程 spbd: File -> new -> project -> Sprint Initializr next ...
+    ![new-project](https://github.com/willpower88/spbd/blob/master/doc/image/new-project.png)
 1. 删除src目录
 1. 新建module spbd-api 右击工程spbd: new -> module -> Sprint Initializr  next ... 
-    ![new-project](https://github.com/willpower88/spbd/blob/master/doc/image/new-project.png)
-1. 新建module spbd-consumer 右击工程spbd: 同上
     ![new-module](https://github.com/willpower88/spbd/blob/master/doc/image/new-module.png)
+1. 新建module spbd-consumer 右击工程spbd: 同上   
 1. 新建module spbd-provider 右击工程spbd: 同上
 1. spbd pom.xml增加moddle和spring-boot-maven-plugin增加configuration
     ```
