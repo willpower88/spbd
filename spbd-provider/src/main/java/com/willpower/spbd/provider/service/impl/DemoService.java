@@ -12,6 +12,6 @@ import org.springframework.stereotype.Component;
 class DemoServiceImpl implements DemoService {
     @Override
     public String sayHi(String name) {
-        return "Hi " + name + "!";
+        return "<h1>I am " + name + "! I am from sprintboot + dubbo!</h1>";
     }
 }
