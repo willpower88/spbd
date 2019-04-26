@@ -20,22 +20,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <!--引入dubbo的场景启动器-->
-        <dependency>
-            <groupId>com.alibaba.boot</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>0.1.0</version>
-        </dependency>
-        <!-- 引入zookeeper的客户端 -->
-        <dependency>
-            <groupId>com.github.sgroschupf</groupId>
-            <artifactId>zkclient</artifactId>
-            <version>0.1</version>
-        </dependency>
-        <dependency>
             <groupId>com.willpower.spbd.api</groupId>
             <artifactId>spbd-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
