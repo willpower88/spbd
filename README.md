@@ -1,7 +1,7 @@
 # springboot整合dubbo #
 _说明：在mac系统下进行整合_
 ## 1. 安装zookeeper ##
-    ```
+   ```
     //查看zookeeper信息
     brew info zookeeper
     //安装
@@ -14,14 +14,14 @@ _说明：在mac系统下进行整合_
     zkServer stop
     //查看状态
     zkServer status
-    ```
+   ```
    ![zookeeper](https://github.com/willpower88/spbd/blob/master/doc/image/zookeeper-info.png)
 ## 2. 搭建dubbo-admin
-    ```
+   ```
     //具体启动查看项目readme
     //https://github.com/apache/incubator-dubbo-admin
     git clone https://github.com/apache/incubator-dubbo-admin
-    ```
+   ```
 ## 3. 新建idea工程
 1. 新建spring工程 spbd: File -> new -> project -> Sprint Initializr next ...
 1. 删除src目录
@@ -207,7 +207,7 @@ _说明：在mac系统下进行整合_
 
         ```
     + 新建 resources/provider.xml
-        ```
+       ```
         <?xml version="1.0" encoding="UTF-8"?>
         <beans xmlns="http://www.springframework.org/schema/beans"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -233,9 +233,9 @@ _说明：在mac系统下进行整合_
                            ref="demoServiceImpl" retries="0" timeout="6000" />
         </beans>
 
-        ```
+       ```
     + 启动类SpbdProviderApplication增加annotation  
-          ```
+         ```
           @ImportResource("classpath:provider.xml")
          ```
 1. spbd-consumer
@@ -330,19 +330,19 @@ _说明：在mac系统下进行整合_
                 <dubbo:reference id="demoService" interface="com.willpower.spbd.api.service.DemoService" />
             </beans>
 
-        ```
+       ```
      + **启动类SpbdConsumerApplication增加annotation,consumer加了@ImportResource("classpath:consumer.xml")会报错，待研究，不加正常，但consumer.xml必须存在**    
 
 ## 4. 启动provider
-    ```
+   ```
     Idea启动即可，要先启动provider
-    ```
+   ```
 ## 5. 启动consumer
-    ```
+   ```
     Idea启动即可，要先启动provider
-    ```
+   ```
 ## 6. 启动dubbo-admin,进入incubator-dubbo-admin
-    + dubbo-admin
+   + dubbo-admin
         ```
         //可选
         mvn clean package  
@@ -351,6 +351,6 @@ _说明：在mac系统下进行整合_
         
    ![dubbo-admin](https://github.com/willpower88/spbd/blob/master/doc/image/dubbo-admin.png)
 	
-    + show success
+   + show success
          
    ![project-success](https://github.com/willpower88/spbd/blob/master/doc/image/project-success.png)
