@@ -1,18 +1,18 @@
 
+# springboot整合dubbo #
+_说明：在mac系统下进行整合_
+#目录#
 <!-- vim-markdown-toc GFM -->
 
-* [springboot整合dubbo](#springboot整合dubbo)
-    * [1. 安装zookeeper](#1-安装zookeeper)
-    * [2. 搭建dubbo-admin](#2-搭建dubbo-admin)
-    * [3. 新建idea工程](#3-新建idea工程)
-    * [4. 启动provider](#4-启动provider)
-    * [5. 启动consumer](#5-启动consumer)
-    * [6. 启动dubbo-admin,进入incubator-dubbo-admin](#6-启动dubbo-admin进入incubator-dubbo-admin)
+* [1. 安装zookeeper](#1-安装zookeeper)
+* [2. 搭建dubbo-admin](#2-搭建dubbo-admin)
+* [3. 新建idea工程](#3-新建idea工程)
+* [4. 启动provider](#4-启动provider)
+* [5. 启动consumer](#5-启动consumer)
+* [6. 启动dubbo-admin,进入incubator-dubbo-admin](#6-启动dubbo-admin进入incubator-dubbo-admin)
 
 <!-- vim-markdown-toc -->
 
-# springboot整合dubbo #
-_说明：在mac系统下进行整合_
 ## 1. 安装zookeeper ##
    ```
     //查看zookeeper信息
