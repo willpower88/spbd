@@ -2,7 +2,7 @@
 # springboot整合dubbo #
 _说明：在mac系统下进行整合_
 
-#目录#
+# 目录 #
 
 <!-- vim-markdown-toc GFM -->
 
